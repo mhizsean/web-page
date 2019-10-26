@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flat Responsive Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/754f4ab304.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+    <!--Nav-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!--toogle button-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOGO</a>
+        </div> 
+        <!--collapse button-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!--Home-->
+  <div id="home">
+      <img src="img/desktop.png" class="banner">
+  </div>
+
+  <!--About-->
+    <div id="about" class="container-fluid text-center">
+        <h1>Welcome to my Website</h1>
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis labore omnis alias impedit, soluta provident quae officia cupiditate veritatis consequuntur.</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit, maiores perspiciatis voluptates nihil facilis? Pariatur dolorem soluta accusamus beatae cupiditate nulla voluptatem nihil fugiat ut dolore. Sint vero, iusto ex aliquid commodi atque recusandae non dolor perferendis! Distinctio quam voluptate, quaerat inventore fugiat repudiandae autem maxime velit maiores possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos maxime nemo quia, consectetur eaque nihil at. </p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/code.png" id="code">
+            </div>
+        </div>
+        <br>
+        <h3><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus in reiciendis consequuntur quasi eius."</i></h3>
+    </div>
+
+    <img src="img//charts.png" class="banner">
+
+    <div id="features" class="container-fluid text-center">
+        <h2>Get To Know Our Features</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/html5.png" id="icon">
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/bootstrap.png" id="icon"> 
+                <h3>BOOTSTRAP</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/css3.png" id="icon">
+                <h3>CSS3</h3>
+            </div>
+        </div>
+        <br> <br>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est expedita nostrum libero consectetur excepturi eius consequatur dolor accusantium ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sed!</h3>
+
+    </div>
+
+    <img src="img/people.png" class="banner">
+    
+    <div id="portfolio" class="container-fluid text-center">
+        <h2>Check out our Portfolio</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/icons/camera.png" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/mic.png" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/phone.png" id="icon">
+            </div>
+       
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/calendar.png" id="icon">
+            </div>
+            
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/tv.png" id="icon">
+            </div>
+            
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/clock.png" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <img src="img/social.png" class="banner">
+
+    <footer id="connect" class="container-fluid text-center">
+        <div class="row">
+            <h2>Connect</h2>
+            <div class="social">
+                <a href="https://web.facebook.com/Bootyacekall" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/MhizSean" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/mzz_sean/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
